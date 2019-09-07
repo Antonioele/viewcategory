@@ -1,2 +1,2 @@
 # viewcategory
-On assett pwa studio add in home un button for visualizer all category
+On assett pwa studio add in home cms un button for visualizer all category
