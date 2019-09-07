@@ -21,7 +21,7 @@ import { Meh  } from 'react-feather';
   const antonio="antonio";
      return(
        <div>
-         <h1>{random}</h1>
+         
          
          <Trigger action={reRender}>
      
