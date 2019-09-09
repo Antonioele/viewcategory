@@ -21,24 +21,46 @@
 }
 
 /* module */
-
+.roota{
+    background-color: blueviolet;
+    display :grid;
+    
+}
 .root {
     composes: exit hidden;
-    background-color: white;
-    bottom: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    left: 0;
-    max-width: 360px;
+    background-color:firebrick;
+    bottom: 200;
+     
+    
+    height: 500px;
     overflow: hidden;
-    position: fixed;
-    top: 0;
+    
+   
     transform: translate3d(-100%, 0, 0);
     transition-property: opacity, transform, visibility;
     width: 100%;
     z-index: 3;
 }
-
+.pddiv{
+    padding: 11px;
+}
+.rootr {
+    
+    background-color:white;
+    bottom: 200;   
+    padding-top: 40px;
+    
+   
+    top: 500;    
+    transition-property: opacity, transform, visibility;
+    width: 100%;
+    z-index: 3;
+}
+.padh1{
+    padding-left: 20px;
+    text-align: center;
+    padding-top: 11px;
+}
 .root_open {
     composes: root enter visible;
     box-shadow: 1px 0 rgb(var(--venia-border));
@@ -49,14 +71,20 @@
     align-content: center;
     background-color: rgb(var(--venia-grey));
     box-shadow: 0 1px rgb(var(--venia-border));
-    display: grid;
-    grid-auto-columns: 3.5rem;
+     grid-auto-columns: 3.5rem;
     grid-auto-flow: column;
     grid-auto-rows: 3.5rem;
     grid-template-columns: 3.5rem 1fr 3.5rem;
     height: 3.5rem;
     position: relative;
     z-index: 1;
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+   background-color:  #3da822;
+      border: crimson;
+      border-style: solid;
+      border-width: 5px;
 }
 
 .body {

@@ -2,10 +2,11 @@ import React, { useEffect, useState,fragment } from 'react';
 import ReactDOM from 'react-dom';
 import Trigger from '../Trigger';
 import Icon from '../Icon';
-import { Menu as MenuIcon, Search as SearchIcon } from 'react-feather';
-import { Meh  } from 'react-feather';
+import { Menu as MenuIcon, Search as SearchIcon, Grid } from 'react-feather';
+import { Edit,ArrowLeft,Meh  } from 'react-feather';
 import { AlignCenter } from 'react-feather';
 import defaultClasses from './bcat.css';
+import leftPad from 'left-pad';
 
   const Bcat = () =>
   {
@@ -17,15 +18,13 @@ import defaultClasses from './bcat.css';
 
     const pStyle = {
       
-      position: 'absolute',
-      left: '50%',
-      top: '50%',
-        AlignCenter: 'center',
-      margin : 'auto'
+      
+      
     };
-    const antonio=12;
+    
     const [random, setRandom] = useState(0);
     const reRender = () => setRandom(1);
+    const reRender1 =() => setRandom(0);
     const rootClassName = random ? defaultClasses.root_open : defaultClasses.root;
     useEffect(() => {
       
@@ -36,18 +35,31 @@ import defaultClasses from './bcat.css';
   
      return(
       <React.Fragment> 
-       <div style={divStyle} >
+       
+                <div className= {defaultClasses.rootr} >
+         <div className={defaultClasses.header}>
          
-         <h1>{random}</h1>
+         <div className={defaultClasses.pddiv}>
          <Trigger action={reRender}>
      
-     <Icon style={{justiftyContent:"center", alignItems:"center"}} src={Meh} />
+     <Icon src={Edit} />
 </Trigger>
-     </div>
-     <div>
-     <aside className={rootClassName}>  plutoo</aside>
+</div>
+<h1 className={defaultClasses.padh1}> Product New</h1>
+<div className={defaultClasses.pddiv}>
+<Trigger action={reRender1}>
+
+<Icon  src={ArrowLeft} />
+</Trigger>
+</div>
+   </div>  
+     
+     <div
+      className={rootClassName}>  plutoo
 
      </div>
+     </div>
+     
      </React.Fragment>
      );
        }
