@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import { shape, string } from 'prop-types';
-import {Title} from '../Head'; 
+
 
 const Content = props =>
 {
