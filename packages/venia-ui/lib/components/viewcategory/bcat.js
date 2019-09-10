@@ -6,8 +6,8 @@ import { Menu as MenuIcon, Search as SearchIcon, Grid } from 'react-feather';
 import { Edit,ArrowLeft,Meh  } from 'react-feather';
 import { AlignCenter } from 'react-feather';
 import defaultClasses from './bcat.css';
-import leftPad from 'left-pad';
 
+import Productnew from './Productnew';
   const Bcat = () =>
   {
     const divStyle = {
@@ -26,12 +26,7 @@ import leftPad from 'left-pad';
     const reRender = () => setRandom(1);
     const reRender1 =() => setRandom(0);
     const rootClassName = random ? defaultClasses.root_open : defaultClasses.root;
-    useEffect(() => {
-      
-      // Update the document title using the browser API
-      
-    });
-  
+    
   
      return(
       <React.Fragment> 
@@ -55,11 +50,11 @@ import leftPad from 'left-pad';
    </div>  
      
      <div
-      className={rootClassName}>  plutoo
-
-     </div>
-     </div>
+      className={rootClassName}>  
+<Productnew></Productnew>
      
+     </div>
+</div>
      </React.Fragment>
      );
        }
