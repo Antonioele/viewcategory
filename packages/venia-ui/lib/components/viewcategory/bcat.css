@@ -34,7 +34,9 @@
     
     height: 500px;
     overflow: hidden;
-    
+    border: #3da822;
+      border-style: solid;
+      border-width: 5px;
    
     transform: translate3d(-100%, 0, 0);
     transition-property: opacity, transform, visibility;
