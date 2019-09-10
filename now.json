@@ -2,7 +2,7 @@
     "version": 2,
     "name": "venia",
     "alias": [
-        "magento-pwastudio-venia-develop"
+        "magento"
     ],
     "scope": "magento-research",
     "env": {
