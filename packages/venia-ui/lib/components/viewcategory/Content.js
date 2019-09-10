@@ -5,6 +5,7 @@ import { shape, string } from 'prop-types';
 
 const Content = props =>
 {
+    
     const titleContent = "New Products";
 return(
     <Fragment>

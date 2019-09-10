@@ -1,0 +1,42 @@
+
+
+
+{
+  products(
+    filter: {
+      created_at: {
+        gt: "2018-11-01 00:00:00"
+      }
+    }
+    pageSize: 16
+    sort: {
+      price: DESC
+    }
+  )
+  {
+    total_count
+    items {
+      name
+      sku
+      small_image {
+            url
+            __typename
+          }
+      
+      price {
+        regularPrice {
+          amount {
+            value
+            currency
+          }
+        }
+      }
+      
+    }
+    page_info {
+      page_size
+      current_page
+    }
+  }
+}
+
