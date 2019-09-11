@@ -1,5 +1,6 @@
 # View Product New on Home page
-On assett pwa studio add in home cms un button  med for visualizer new product
+On assett pwa studio add in home cms un button  books per visualizzare  new product
+con arrow scompaiono i prodotti
 Si puo vedere il modulo al seguente indirizzo:
 [](url)https://youtu.be/k6xm8Zr7vBE
 I componenti react si trovano  in
