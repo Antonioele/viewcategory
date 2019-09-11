@@ -1,14 +1,12 @@
+query prodotto($data :String!) {
 
-
-
-{
   products(
     filter: {
       created_at: {
-        gt: "2018-11-01 00:00:00"
+        gt: $data
       }
     }
-    pageSize: 16
+    pageSize: 6
     sort: {
       price: DESC
     }
@@ -39,4 +37,7 @@
     }
   }
 }
+
+
+
 

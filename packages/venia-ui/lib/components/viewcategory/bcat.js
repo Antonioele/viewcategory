@@ -40,7 +40,7 @@ import Productnew from './Productnew';
      <Icon src={Edit} />
 </Trigger>
 </div>
-<h1 className={defaultClasses.padh1}> Product New</h1>
+<h1 className={defaultClasses.padh1}> New Product </h1>
 <div className={defaultClasses.pddiv}>
 <Trigger action={reRender1}>
 
